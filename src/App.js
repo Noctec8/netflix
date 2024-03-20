@@ -1,6 +1,6 @@
 import './App.css';
 import { categories } from './api';
-import Row from './components/Row'
+import Row from './Comandos/Row'
 
 function App() {
   return (
