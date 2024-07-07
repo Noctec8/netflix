@@ -1,5 +1,5 @@
-const API_KEY = '011cb5d3d6e81f18cdb89e4a3192b13e'
-const DNS = 'https://api.themoviedb.org/3'
+const API_KEY = "264bb09ec4d858065cfb8860838a32ff"
+const DNS = "https://api.themoviedb.org/3"
 
 export const categories = [
     {
@@ -42,11 +42,12 @@ export const categories = [
 
 export const getData = async (path) => {
     try{
+        
         let URI = DNS + path
-        let response = await fetch(URI)
-        return response.json()
+        let result = await fetch(URI)
+        return result.json()    
+
     } catch (error){
         console.log(error)
     }
-
 }

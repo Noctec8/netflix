@@ -1,6 +1,8 @@
 import './App.css';
 import { categories } from './api';
 import Row from './Comandos/Row'
+import Banner from "./Comandos/Banner"
+import Nav from "./Comandos/Nav"
 
 function App() {
   return (
@@ -9,6 +11,9 @@ function App() {
         {/*Navbar*/}
         {/*Banner*/}
         {/*Categorias - Linhas*/}
+
+        <Nav></Nav>
+        <Banner></Banner>
 
         {categories.map( (category) => {
 
